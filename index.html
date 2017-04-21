@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Front End Test</title>
+
+    <link rel="stylesheet" href="./assets/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <div class="head-top">
+                <div class="logo">
+                    <img src="./assets/images/logo.png" alt="logo">
+                </div>
+                
+                <div class="search-form">
+                    <input type="text" name="search-form" id="txtSearch" />
+                    <a href="#" title=""><img src="./assets/images/search-icon.svg" alt="search icon"></a>
+                </div>
+                <div class="cart-icon">
+                    <img src="assets/images/cart-icon.png" alt="cart icon">
+                    <span> &#36;300</span>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#" title="" >HOME</a></li>
+                    <li><a href="#" title="">SALE</a></li>
+                    <li><a href="#" title="">HANDBAGS</a></li>
+                    <li><a href="#" title="">WALLETS</a></li>
+                    <li><a href="#" title="">ACCESSORIES</a></li>
+                    <li><a href="#" title="">MENS STORE</a></li>
+                    <li><a href="#" title="">SHOES</a></li>
+                    <li><a href="#" title="">VINTAGE</a></li>
+                    <li><a href="#" title="">SERVICES</a></li>
+                    <li><a href="#" title="">CONTACT US</a></li>
+                </ul>
+            </div>
+        </header>
+        <section class="content">
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <img src="assets/images/shirt-slide.png">
+                    <div class="right-slide">
+                        <h1>COWHIDE STANDARD CREW 1</h1>
+                        <div class="text">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of or-ganic cotton and comes in a regular fit.</div>
+                        <a href="#">
+                        SHOP NOW
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="mySlides">
+                    <img src="assets/images/shirt-slide.png">
+                    <div class="right-slide">
+                        <h1>COWHIDE STANDARD CREW 2</h1>
+                        <div class="text">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of or-ganic cotton and comes in a regular fit.</div>
+                        <a href="#">
+                        SHOP NOW
+                        </a>
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <img src="assets/images/shirt-slide.png">
+                    <div class="right-slide">
+                        <h1>COWHIDE STANDARD CREW 3</h1>
+                        <div class="text">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of or-ganic cotton and comes in a regular fit.</div>
+                        <a href="#">
+                        SHOP NOW
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="mySlides">
+                    <img src="assets/images/shirt-slide.png">
+                    <div class="right-slide">
+                        <h1>COWHIDE STANDARD CREW 4</h1>
+                        <div class="text">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of or-ganic cotton and comes in a regular fit.</div>
+                        <a href="#">
+                        SHOP NOW
+                        </a>   
+                    </div>
+                </div>
+                <div class="mySlides">
+                    <img src="assets/images/shirt-slide.png">
+                    <div class="right-slide">
+                        <h1>COWHIDE STANDARD CREW 5</h1>
+                        <div class="text">White coloured, short-sleeved, printed T-shirt for men by Levi's. This crew-neck T-shirt is made of or-ganic cotton and comes in a regular fit.</div>
+                        <a href="#">
+                        SHOP NOW
+                        </a>
+                    </div>
+                </div>
+                <br>
+
+                <div style="text-align:center" class="dotted">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                  <span class="dot" onclick="currentSlide(4)"></span>
+                  <span class="dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+            <div class="category">
+                <div class="category-detail">
+                    <img src="assets/images/shoe-categories.png" alt="shoe image" id="shoes">
+                    <div class="right-category-detail">
+                        <p>BRANDED SHOES</p>
+                        <a href="#">SHOP</a>
+                    </div>
+                </div>
+                <div class="category-detail" id="category-detail-second">
+                    <img src="assets/images/shirt-categories.png" alt="shirt image">
+                    <div class="right-category-detail">
+                        <p>BRANDED SHOES</p>
+                        <a href="#">SHOP</a>
+                    </div>
+                </div>
+                <div class="category-detail" id="category-detail-last">
+                    <img src="assets/images/short-categories.png" alt="short image">
+                    <div class="right-category-detail">
+                        <p>BRANDED SHOES</p>
+                        <a href="#">SHOP</a>
+                    </div>
+                </div>
+                <div class="pre">
+                    <img src="assets/images/left-arrow.svg">
+                </div>
+                <div class="next">
+                    <img src="assets/images/right-arrow.svg">
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-title">
+                    <p>FEATURED PRODUCTS</p>
+                </div>
+                <div class="product-content">
+                    <div class="product-row">
+                        <div class="product-detail">
+                            <img src="assets/images/shoe-product.png" alt="shoe product">
+                            <div class="name-product">BRANDED SHOE</div>
+                            <div class="price-product">
+                                <span> &#36;300</span>
+                                <a href="#">BUY NOW</a>
+                            </div>
+                        </div>
+                        <div class="product-detail">
+                            <img src="assets/images/shirt-blue-product.png" alt="shoe product">
+                            <div class="name-product">BRANDED TEES</div>
+                            <div class="price-product">
+                                <span> &#36;300</span>
+                                <a href="#">BUY NOW</a>
+                            </div>
+                        </div>
+                        <div class="product-detail">
+                            <img src="assets/images/shirt-white-product.png" alt="shirt product">
+                            <div class="name-product">BRANDED T-SHIRT</div>
+                            <div class="price-product">
+                                <span> &#36;300</span>
+                                <a href="#">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-row">
+                        <div class="product-detail">
+                            <img src="assets/images/wallet-product.png" alt="wallet product">
+                            <div class="name-product">BRANDED WALLET</div>
+                            <div class="price-product">
+                                <span> &#36;300</span>
+                                <a href="#">BUY NOW</a>
+                            </div>
+                        </div>
+                        <div class="product-detail">
+                            <img src="assets/images/bag-women-product.png" alt="bag-woment- product">
+                            <div class="name-product">BRANDED BAG</div>
+                            <div class="price-product">
+                                <span> &#36;300</span>
+                                <a href="#">BUY NOW</a>
+                            </div>
+                        </div>
+                        <div class="product-detail">
+                            <img src="assets/images/short-product.png" alt="short product">
+                            <div class="name-product">BRANDED SHORT</div>
+                            <div class="price-product">
+                                <span> &#36;300</span>
+                                <a href="#">BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="head-footer">
+                <div class="content-footer">
+                    <p>FEATURED SALE</p>
+                    <ul>
+                        <li><a href="#" title="">Alexis Hudson</a></li>
+                        <li><a href="#" title="">American Apparel</a></li>
+                        <li><a href="#" title="">Ben Sherman</a></li>
+                        <li><a href="#" title="">Big Buddha</a></li>
+                        <li><a href="#" title="">Chanel</a></li>
+                        <li><a href="#" title="">Christian Audigier</a></li>
+                        <li><a href="#" title="">Coach</a></li>
+                        <li><a href="#" title="">Cole Haan</a></li>
+                    </ul>
+                </div>
+                <div class="content-footer">
+                    <p>MENS STORE</p>
+                    <ul>
+                        <li><a href="#" title="">Alexis Hudson</a></li>
+                        <li><a href="#" title="">American Apparel</a></li>
+                        <li><a href="#" title="">Ben Sherman</a></li>
+                        <li><a href="#" title="">Big Buddha</a></li>
+                        <li><a href="#" title="">Chanel</a></li>
+                        <li><a href="#" title="">Christian Audigier</a></li>
+                        <li><a href="#" title="">Coach</a></li>
+                        <li><a href="#" title="">Cole Haan</a></li>
+                    </ul>
+                </div>
+                <div class="content-footer">
+                    <p>WOMEN STORE</p>
+                    <ul>
+                        <li><a href="#" title="">Alexis Hudson</a></li>
+                        <li><a href="#" title="">American Apparel</a></li>
+                        <li><a href="#" title="">Ben Sherman</a></li>
+                        <li><a href="#" title="">Big Buddha</a></li>
+                        <li><a href="#" title="">Chanel</a></li>
+                        <li><a href="#" title="">Christian Audigier</a></li>
+                        <li><a href="#" title="">Coach</a></li>
+                        <li><a href="#" title="">Cole Haan</a></li>
+                    </ul>
+                </div>
+                <div class="content-footer">
+                    <p>QUICK LINKS</p>
+                    <ul>
+                        <li><a href="#" title="">Alexis Hudson</a></li>
+                        <li><a href="#" title="">American Apparel</a></li>
+                        <li><a href="#" title="">Ben Sherman</a></li>
+                        <li><a href="#" title="">Big Buddha</a></li>
+                        <li><a href="#" title="">Chanel</a></li>
+                        <li><a href="#" title="">Christian Audigier</a></li>
+                        <li><a href="#" title="">Coach</a></li>
+                        <li><a href="#" title="">Cole Haan</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="clear"></div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; 2017, Author: css author.</p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1} 
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; 
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block"; 
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+    <script src="./assets/js/jquery-3.2.0.min.js" defer></script>
+    <script src="./assets/js/bootstrap.min.js" defer></script>
+    <script src="./assets/js/script.js" defer></script>
+</body>
+</html>
